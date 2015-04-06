@@ -16,7 +16,7 @@ public class FontLoaderI implements FontLoader {
 	}
 
 	public Font loadFont(Object fontType, String name) throws ResourceParseException {
-		System.out.println("path: "+BaseObjectHelper.getPath(fontType, name));
+		//System.out.println("path: "+BaseObjectHelper.getPath(fontType, name));
 		//System.out.println("name: "+name);
 		String filename = name.substring(name.lastIndexOf("/")+1, name.indexOf(".")); 
 		UIFont typeface =  UIFont.getFont(filename, 48);
